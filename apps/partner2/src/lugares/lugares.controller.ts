@@ -38,7 +38,7 @@ export class LugaresController {
       name: atualizarLugarRequest.nome,
     });
   }
-
+  
   @Delete(':lugarId')
   remove(@Param('id') lugarId: string, @Param('eventoId') eventoId: string) {
     return this.spotsService.remove(eventoId, lugarId);
