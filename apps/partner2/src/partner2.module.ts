@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { EventosModule } from './eventos/eventos.module';
 import { PrismaModule } from '@app/core/prisma/prisma.module';
 import { LugaresModule } from './lugares/lugares.module';
+import { AuthModule } from '@app/core/auth/auth.module';
 
 @Module({
   imports: [
@@ -10,6 +11,7 @@ import { LugaresModule } from './lugares/lugares.module';
       envFilePath: '.env.partner2',
       isGlobal: true,
     }),
+    AuthModule,
     PrismaModule,
     EventosModule,
     LugaresModule,

@@ -1,0 +1,49 @@
+# installs nvm (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+
+# download and install Node.js (you may need to restart the terminal)
+nvm install 20
+
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.14.0`
+
+npm install -g @nestjs/cli
+
+nest new nestjs-partners-api
+
+npm run start:dev
+
+nest generate controller event
+
+nest g resource 
+
+docker compose up comando para subir o container
+
+docker compose exec db bash comando para entrar no container e executar o bash
+
+dentro do container execute mysql -uroot -proot para entrar no mysql dentro do container
+exit para sair do mysql
+
+docker compose down para parar o container
+
+npx prisma init para instalar o prisma
+
+npx prisma migrate dev para gerar um arquivo com schema  e executa o sql no banco de dados
+
+integrar o prisma com o nest 
+
+nest g module prisma
+
+nest g service prisma
+
+docker compose exec app bash para entrar no bash do app do node
+
+nest g module auth
+
+nest g guard auth
+
+ npm run start:dev -- partner1 para rodar o app1
+
+ npm run start:dev -- partner2 para rodar o app2
